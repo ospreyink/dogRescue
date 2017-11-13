@@ -6,6 +6,7 @@ app.set("view engine", "ejs");
 mongoose.connect("mongodb://localhost/rescue-rovers", {
    useMongoClient: true
 });
+app.use(express.static(__dirname + "/public"));
 
 
 app.get("/", function(req, res){

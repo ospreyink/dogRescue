@@ -1,5 +1,6 @@
 <% include partials/header %>
 <div class="container">
+
   <div class="row">
     <div class="col-md-6">
       <div class="card">
@@ -12,95 +13,114 @@
       </div>
     </div>
     <div class="col-md-6">
-      <div class="card container">
-        <h3>Find your new best friend!</h3>
-        <form>
-          <div class="form-group">
-            <label class="col-form-label" for="formGroupExampleInput">Breed</label>
-            <input type="text" class="form-control" id="">
-          </div>
-          <p>Size</p>
-          <div class="form-check form-check-inline">
-            <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" id="" value=""> S
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title text-center">Find your new best friend!</h3>
+          <form>
+            <div class="form-group">
+              <label class="col-form-label" for="formGroupExampleInput">Breed</label>
+              <input type="text" class="form-control" id="">
+            </div>
+            <label class="col-form-label" for="formGroupExampleInput">
+              Size
             </label>
-          </div>
-          <div class="form-check form-check-inline">
-            <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" id="" value=""> M
-            </label>
-          </div>
-          <div class="form-check form-check-inline">
-            <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" id="" value=""> L
-            </label>
-          </div>
-          <div class="form-check form-check-inline">
-            <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" id="" value=""> XL
-            </label>
-          </div>
-          <p>Age</p>
-          <div class="form-check form-check-inline">
-            <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" id="" value=""> Puppy
-            </label>
-          </div>
-          <div class="form-check form-check-inline">
-            <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" id="" value=""> Young
-            </label>
-          </div>
-          <div class="form-check form-check-inline">
-            <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" id="" value=""> Adult
-            </label>
-          </div>
-          <div class="form-check form-check-inline">
-            <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" id="" value=""> Senior
-            </label>
-          </div>
-          <p><button type="submit" class="btn btn-primary">Fetch!</button></p>
-        </form>
-      </div>
+            <div class="row checkmarks">
+              <div class="col">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" id="" value=""> S
+                </label>
+              </div>
+              <div class="col">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" id="" value=""> M
+                </label>
+              </div>
+              <div class="col">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" id="" value=""> L
+                </label>
+              </div>
+              <div class="col">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" id="" value=""> XL
+                </label>
+              </div>
+            </div>
 
+            <label class="col-form-label" for="formGroupExampleInput">Age</label>
+            <div class="row checkmarks">
+              <div class="col">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" id="" value=""> Puppy
+                </label>
+              </div>
+              <div class="col">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" id="" value=""> Young
+                </label>
+              </div>
+              <div class="col">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" id="" value=""> Adult
+                </label>
+              </div>
+              <div class="col">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" id="" value=""> Senior
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-center">
+                <hr>
+                <button type="submit" class="btn btn-primary">Fetch!</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
+
   <div class="row">
     <div class="col-md-12">
-      <div class="container card">
-        <div class="row">
-          <h3 class="text-center">Browse other adoptable dogs</h3>
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title text-center">Browse other adoptable dogs</h3>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="https://farm3.staticflickr.com/2680/4073673270_3c2315fb3c.jpg" class="img-thumbnail">
+              <h5 class="card-title text-center">Maisy</h5>
+            </div>
+            <div class="col-md-3">
+              <img src="https://farm9.staticflickr.com/8320/8034482042_ed249192e9.jpg" class="img-thumbnail">
+              <h5 class="card-title text-center">Nanook</h5>
+            </div>
+            <div class="col-md-3">
+              <img src="https://farm1.staticflickr.com/91/238957145_485ba97dcc.jpg" class="img-thumbnail">
+              <h5 class="card-title text-center">Roger</h5>
+            </div>
+            <div class="col-md-3">
+              <img src="https://farm8.staticflickr.com/7151/6698150783_161b18182e.jpg" class="img-thumbnail">
+              <h5 class="card-title text-center">Odie</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-center">
+              <a href="/dogs"><button class="btn btn-primary">See more!</button></a>
+            </div>
+          </div>
         </div>
-        <div class="row">
-          <div class="col-md-3">
-            <img src="https://farm3.staticflickr.com/2680/4073673270_3c2315fb3c.jpg" class="img-thumbnail">
-            <h5>Maisy</h5>
-          </div>
-          <div class="col-md-3">
-            <img src="https://farm9.staticflickr.com/8320/8034482042_ed249192e9.jpg" class="img-thumbnail">
-            <h5>Nanook</h5>
-          </div>
-          <div class="col-md-3">
-            <img src="https://farm1.staticflickr.com/91/238957145_485ba97dcc.jpg" class="img-thumbnail">
-            <h5>Roger</h5>
-          </div>
-          <div class="col-md-3">
-            <img src="https://farm8.staticflickr.com/7151/6698150783_161b18182e.jpg" class="img-thumbnail">
-            <h5>Odie</h5>
-          </div>
-        </div>
-        <div class="row">
-          <button class="btn btn-primary">See more!</button>
-        </div>
-
       </div>
-
-
     </div>
   </div>
+
+  <div class="row">
+    <div class="col text-center">
+      <h4>Help us help them!</h4>
+      <p>PayPal | Amazon</p>
+    </div>
+  </div>
+
 </div>
-
-
 <% include partials/footer %>
