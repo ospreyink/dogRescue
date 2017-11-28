@@ -1,0 +1,25 @@
+<% include partials/header %>
+
+<div class="container">
+  <div class="row dogItem">
+    <div class="col-md-4">
+      <img class="img-fluid" src="<%= dog.image %>">
+    </div>
+    <div class="col-md-8">
+        <h4><%= dog.name %></h4>
+        <p><%= dog.description %></p>
+        <a href="#" class="btn btn-primary">Meet <%= dog.name %></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <p><a href="/dogs/<%= dog._id %>/edit">Edit this dog's info</a>
+      <br><a href="/dogs">Back to List of Available Dogs</a></p>
+      <form id="delete" action="/dogs/<%= dog._id %>?_method=DELETE" method="POST">
+        <button class="btn btn-outline-danger">Delete this dog</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<% include partials/footer %>

@@ -2,38 +2,21 @@
 
 <div class="container">
 
-  <div class="row dogItem">
-    <div class="col-md-4">
-      <img class="img-fluid rounded" src="https://farm3.staticflickr.com/2416/1607551896_1d4b404991.jpg" alt="Card image cap">
-    </div>
-    <div class="col-md-8">
-      <h3>Bowser</h3>
-      <p>Pommy ipsum have a butcher's at this bit of a Jack the lad meat and two veg crisps, sod's law ear hole for sooth nose rag.</p>
-      <button class="btn btn-primary float-right">Learn More</button>
-    </div>
-  </div>
+<% dogs.forEach(function(dog){ %>
 
   <div class="row dogItem">
     <div class="col-md-4">
-      <img class="img-fluid rounded" src="https://farm1.staticflickr.com/91/238957145_485ba97dcc.jpg" alt="Card image cap">
+      <img class="img-fluid rounded" src="<%= dog.image %>" alt="Card image cap">
     </div>
     <div class="col-md-8">
-      <h3>Meatball</h3>
-      <p>Pommy ipsum have a butcher's at this bit of a Jack the lad meat and two veg crisps, sod's law ear hole for sooth nose rag, copper it's nicked manky got his end away. Pants clock round the earhole ever so lovely shortbread morris dancers.</p>
-      <button class="btn btn-primary float-right">Learn More</button>
+      <h3><%= dog.name %></h3>
+      <p><%= dog.description %></p>
+      <a href="/dogs/<%= dog._id %>"><button class="btn btn-primary float-right">Learn More</button></a>
     </div>
   </div>
 
-  <div class="row dogItem">
-    <div class="col-md-4">
-      <img class="img-fluid rounded" src="https://farm1.staticflickr.com/134/318938470_7c0846cd1f.jpg" alt="Card image cap">
-    </div>
-    <div class="col-md-8">
-      <h3>Lady</h3>
-      <p>Pants clock round the earhole ever so lovely shortbread morris dancers.</p>
-      <button class="btn btn-primary float-right">Learn More</button>
-    </div>
-  </div>
+<% }) %>
+
 
   <div class="row">
     <div class="col">

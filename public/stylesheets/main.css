@@ -67,3 +67,7 @@ footer {
   margin-top: 25px;
   padding: 25px;
 }
+
+.dogProfileCard {
+  width: 50rem;
+}
