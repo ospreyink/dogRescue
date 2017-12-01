@@ -2,22 +2,37 @@
 
 <div class="container">
   <div class="row dogItem">
-    <div class="col-md-4">
-      <img class="img-fluid" src="<%= dog.image %>">
+    <div class="col-md-5">
+      <img class="img-fluid rounded" src="<%= dog.image %>">
     </div>
-    <div class="col-md-8">
-        <h4><%= dog.name %></h4>
-        <p><%= dog.description %></p>
-        <a href="#" class="btn btn-primary">Meet <%= dog.name %></a>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-12 text-center">
-      <p><a href="/dogs/<%= dog._id %>/edit">Edit this dog's info</a>
-      <br><a href="/dogs">Back to List of Available Dogs</a></p>
-      <form id="delete" action="/dogs/<%= dog._id %>?_method=DELETE" method="POST">
-        <button class="btn btn-outline-danger">Delete this dog</button>
-      </form>
+    <div class="col-md-7">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1><%= dog.name %></h1>
+          <p>Age: Young
+          <br>Breed: Pit bull mix</br></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <p><%= dog.description %></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="list-inline">
+            <li class="list-inline-item"><i class="fa fa-heart" aria-hidden="true"></i> Requires special care</li>
+            <li class="list-inline-item"><i class="fa fa-child" aria-hidden="true"></i> No children </li>
+            <li class="list-inline-item"><i class="fa fa-check" aria-hidden="true"></i> Cats OK</p></li>
+          </ul>
+        <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <a href="#" class="btn btn-primary">Meet <%= dog.name %></a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
