@@ -35,6 +35,19 @@
       </div>
     </div>
   </div>
+<% if(currentUser) { %>
+  <div class="row">
+    <div class="col">
+      <p>Admin:</p>
+      <form>
+        <button class="btn btn-outline-secondary">Edit</button>
+      </form>
+      <form>
+        <button class="btn btn-outline-danger">Delete</button>
+      </form>
+    </div>
+  </div>
+<% } %>
 </div>
 
 <% include partials/footer %>
