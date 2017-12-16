@@ -39,12 +39,10 @@
   <div class="row">
     <div class="col">
       <p>Admin:</p>
-      <form>
-        <button class="btn btn-outline-secondary">Edit</button>
-      </form>
-      <form>
-        <button class="btn btn-outline-danger">Delete</button>
-      </form>
+        <a href="/dogs/<%= dog._id %>/edit"><button class="btn btn-outline-secondary">Edit</button></a>
+        <form action="/dogs/<%= dog._id %>?_method=DELETE" method="POST">
+          <button class="btn btn-outline-danger">Delete <%= dog.name %></button>
+        </form>
     </div>
   </div>
 <% } %>
